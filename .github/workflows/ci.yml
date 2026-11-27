@@ -8,10 +8,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
-        ruby-version: ['3.4.13']
+        ruby-version: ['3.4.1']
     steps:
       - uses: actions/checkout@v4
       - name: Set up Ruby
@@ -23,11 +23,11 @@ jobs:
         run: bundle install
 
   sast:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build # Runs right after build completes
     strategy:
       matrix:
-        ruby-version: ['3.4.13']
+        ruby-version: ['3.4.1']
     steps:
       - uses: actions/checkout@v4
       - name: Set up Ruby
