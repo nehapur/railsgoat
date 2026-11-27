@@ -1,0 +1,158 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Attribute Restriction",
+      "warning_code": 19,
+      "fingerprint": "188826df8065758b4ada4ccea65ba01c5445189ddebec4412198c6c90a83c701",
+      "check_name": "ModelAttributes",
+      "message": "Mass assignment is not restricted using `attr_accessible`",
+      "file": "app/models/application_record.rb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/attribute_restriction/",
+      "code": null,
+      "render_path": null,
+      "location": {
+        "type": "model",
+        "model": "ApplicationRecord"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "False positive: attr_accessible is deprecated in modern Rails; app uses Strong Parameters"
+    },
+    {
+      "warning_type": "Mass Assignment",
+      "warning_code": 17,
+      "fingerprint": "1e54882bda5fb270388a2a0ee0fcfb1eccbd89cf8c9965e57ca1417313ca7a8f",
+      "check_name": "MassAssignment",
+      "message": "Unprotected mass assignment",
+      "file": "app/controllers/messages_controller.rb",
+      "line": 26,
+      "link": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+      "code": "Message.create(message_params)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "MessagesController",
+        "method": "create"
+      },
+      "user_input": null,
+      "confidence": "Weak",
+      "note": "False positive: Protected via Rails Strong Parameters (message_params)"
+    },
+    {
+      "warning_type": "Attribute Restriction",
+      "warning_code": 19,
+      "fingerprint": "310689c57d1e1f319662490a2a7f65d06191bc2305dc154fcd74329c97a7081b",
+      "check_name": "ModelAttributes",
+      "message": "Mass assignment is not restricted using `attr_accessible`",
+      "file": "app/models/benefits.rb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/attribute_restriction/",
+      "code": null,
+      "render_path": null,
+      "location": {
+        "type": "model",
+        "model": "Benefits"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "False positive: attr_accessible is deprecated in modern Rails; app uses Strong Parameters"
+    },
+    {
+      "warning_type": "Attribute Restriction",
+      "warning_code": 19,
+      "fingerprint": "3864c3270b596669f6bee563480e8ad041770ff3195fdbcc955f04f544c25ed0",
+      "check_name": "ModelAttributes",
+      "message": "Mass assignment is not restricted using `attr_accessible`",
+      "file": "app/models/message.rb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/attribute_restriction/",
+      "code": null,
+      "render_path": null,
+      "location": {
+        "type": "model",
+        "model": "Message"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "False positive: attr_accessible is deprecated in modern Rails; app uses Strong Parameters"
+    },
+    {
+      "warning_type": "Attribute Restriction",
+      "warning_code": 19,
+      "fingerprint": "3a082ab6e0cbf97a537e9a38a09710335acb8916d3807ebf721e6fc9ba838c82",
+      "check_name": "ModelAttributes",
+      "message": "Mass assignment is not restricted using `attr_accessible`",
+      "file": "app/models/paid_time_off.rb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/attribute_restriction/",
+      "code": null,
+      "render_path": null,
+      "location": {
+        "type": "model",
+        "model": "PaidTimeOff"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "False positive: attr_accessible is deprecated in modern Rails; app uses Strong Parameters"
+    },
+    {
+      "warning_type": "Attribute Restriction",
+      "warning_code": 19,
+      "fingerprint": "55a90d133a3b7177dbf019058a107da989a2f6e28927f07993a9a42cfe344256",
+      "check_name": "ModelAttributes",
+      "message": "Mass assignment is not restricted using `attr_accessible`",
+      "file": "app/models/work_info.rb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/attribute_restriction/",
+      "code": null,
+      "render_path": null,
+      "location": {
+        "type": "model",
+        "model": "WorkInfo"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "False positive: attr_accessible is deprecated in modern Rails; app uses Strong Parameters"
+    },
+    {
+      "warning_type": "Attribute Restriction",
+      "warning_code": 19,
+      "fingerprint": "567669483790818c87e6d6ed6599a92fb21f65bb7f6ef31d5c937dd43bfa202e",
+      "check_name": "ModelAttributes",
+      "message": "Mass assignment is not restricted using `attr_accessible`",
+      "file": "app/models/key_management.rb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/attribute_restriction/",
+      "code": null,
+      "render_path": null,
+      "location": {
+        "type": "model",
+        "model": "KeyManagement"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "False positive: attr_accessible is deprecated in modern Rails; app uses Strong Parameters"
+    },
+    {
+      "warning_type": "Mass Assignment",
+      "warning_code": 17,
+      "fingerprint": "6024d23c00218a79bffa1487df639979a5180700a1c9e4a5f6c992a227c48a0c",
+      "check_name": "MassAssignment",
+      "message": "Unprotected mass assignment",
+      "file": "app/controllers/schedule_controller.rb",
+      "line": 8,
+      "link": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+      "code": "Schedule.new(schedule_params)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "ScheduleController",
+        "method": "create"
+      },
+      "user_input": null,
+      "confidence": "Weak",
+      "note": "False positive: Protected via Rails Strong Parameters (schedule_params)"
+    }
+  ]
+}
