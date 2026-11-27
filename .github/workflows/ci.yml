@@ -37,7 +37,7 @@ jobs:
       - name: Install Brakeman
         run: gem install brakeman -v 5.2.1
       - name: Run Brakeman SAST scan
-        run: brakeman -f json | tee result.json
+        run: brakeman -i config/brakeman.ignore -f json | tee result.json
       - name: Upload Brakeman report
         if: always()
         uses: actions/upload-artifact@v4
