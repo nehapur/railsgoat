@@ -51,7 +51,7 @@ jobs:
     needs: [build, sast]
     strategy:
       matrix:
-        ruby-version: ['3.4.13']
+        ruby-version: ['3.4.1']
     steps:
       - uses: actions/checkout@v4
       - name: Set up Ruby
