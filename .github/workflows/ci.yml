@@ -27,7 +27,7 @@ jobs:
     needs: build # Runs right after build completes
     strategy:
       matrix:
-        ruby-version: ['3.4.1']
+        ruby-version: ['3.4.13']
     steps:
       - uses: actions/checkout@v4
       - name: Set up Ruby
@@ -44,6 +44,7 @@ jobs:
         with:
           name: brakeman-security-report
           path: result.json
+        continue-on-error: true
 
   test:
     runs-on: ubuntu-latest
